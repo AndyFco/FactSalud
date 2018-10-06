@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace FactSalud
 {
-    public partial class Form1 : Form
+    public partial class Consulta : Form
     {
-        public Form1()
+        public Consulta()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
