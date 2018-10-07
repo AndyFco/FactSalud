@@ -34,7 +34,7 @@ namespace FactSalud
             listBox1.Items.Add(numeros);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnSalir(object sender, EventArgs e)
         {
             this.Close();
         }

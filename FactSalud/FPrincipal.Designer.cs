@@ -41,6 +41,13 @@
             this.sonografiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pAPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripComboBox3 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripComboBox4 = new System.Windows.Forms.ToolStripComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,12 +83,18 @@
             // 
             // medicinaGeneralToolStripMenuItem
             // 
+            this.medicinaGeneralToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox1});
             this.medicinaGeneralToolStripMenuItem.Name = "medicinaGeneralToolStripMenuItem";
             this.medicinaGeneralToolStripMenuItem.Size = new System.Drawing.Size(225, 28);
             this.medicinaGeneralToolStripMenuItem.Text = "Medicina General";
             // 
             // ginecologiaToolStripMenuItem
             // 
+            this.ginecologiaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultaToolStripMenuItem,
+            this.pAPToolStripMenuItem,
+            this.resultadosToolStripMenuItem});
             this.ginecologiaToolStripMenuItem.Name = "ginecologiaToolStripMenuItem";
             this.ginecologiaToolStripMenuItem.Size = new System.Drawing.Size(225, 28);
             this.ginecologiaToolStripMenuItem.Text = "Ginecologia";
@@ -141,6 +154,50 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(90, 27);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox2});
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.consultaToolStripMenuItem.Text = "Consulta";
+            // 
+            // pAPToolStripMenuItem
+            // 
+            this.pAPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox3});
+            this.pAPToolStripMenuItem.Name = "pAPToolStripMenuItem";
+            this.pAPToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.pAPToolStripMenuItem.Text = "PAP";
+            // 
+            // resultadosToolStripMenuItem
+            // 
+            this.resultadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox4});
+            this.resultadosToolStripMenuItem.Name = "resultadosToolStripMenuItem";
+            this.resultadosToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.resultadosToolStripMenuItem.Text = "Resultados";
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
+            // 
+            // toolStripComboBox2
+            // 
+            this.toolStripComboBox2.Name = "toolStripComboBox2";
+            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 23);
+            // 
+            // toolStripComboBox3
+            // 
+            this.toolStripComboBox3.Name = "toolStripComboBox3";
+            this.toolStripComboBox3.Size = new System.Drawing.Size(121, 23);
+            // 
+            // toolStripComboBox4
+            // 
+            this.toolStripComboBox4.Name = "toolStripComboBox4";
+            this.toolStripComboBox4.Size = new System.Drawing.Size(121, 23);
+            // 
             // FPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,5 +235,12 @@
         private System.Windows.Forms.ToolStripMenuItem sonografiaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
+        private System.Windows.Forms.ToolStripMenuItem pAPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox3;
+        private System.Windows.Forms.ToolStripMenuItem resultadosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox4;
     }
 }

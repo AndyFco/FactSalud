@@ -22,7 +22,7 @@ namespace FactSalud
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnSalir(object sender, EventArgs e)
         {
             this.Close();
         }
