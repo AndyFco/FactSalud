@@ -32,7 +32,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.servicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicinaGeneralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.ginecologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
+            this.pAPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox3 = new System.Windows.Forms.ToolStripComboBox();
+            this.resultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripComboBox4 = new System.Windows.Forms.ToolStripComboBox();
             this.pediatriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psicologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.odontologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,13 +48,7 @@
             this.sonografiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pAPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripComboBox3 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripComboBox4 = new System.Windows.Forms.ToolStripComboBox();
+            this.Conectar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +90,11 @@
             this.medicinaGeneralToolStripMenuItem.Size = new System.Drawing.Size(225, 28);
             this.medicinaGeneralToolStripMenuItem.Text = "Medicina General";
             // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
+            // 
             // ginecologiaToolStripMenuItem
             // 
             this.ginecologiaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -98,6 +104,45 @@
             this.ginecologiaToolStripMenuItem.Name = "ginecologiaToolStripMenuItem";
             this.ginecologiaToolStripMenuItem.Size = new System.Drawing.Size(225, 28);
             this.ginecologiaToolStripMenuItem.Text = "Ginecologia";
+            // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox2});
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(170, 28);
+            this.consultaToolStripMenuItem.Text = "Consulta";
+            // 
+            // toolStripComboBox2
+            // 
+            this.toolStripComboBox2.Name = "toolStripComboBox2";
+            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 23);
+            // 
+            // pAPToolStripMenuItem
+            // 
+            this.pAPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox3});
+            this.pAPToolStripMenuItem.Name = "pAPToolStripMenuItem";
+            this.pAPToolStripMenuItem.Size = new System.Drawing.Size(170, 28);
+            this.pAPToolStripMenuItem.Text = "PAP";
+            // 
+            // toolStripComboBox3
+            // 
+            this.toolStripComboBox3.Name = "toolStripComboBox3";
+            this.toolStripComboBox3.Size = new System.Drawing.Size(121, 23);
+            // 
+            // resultadosToolStripMenuItem
+            // 
+            this.resultadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox4});
+            this.resultadosToolStripMenuItem.Name = "resultadosToolStripMenuItem";
+            this.resultadosToolStripMenuItem.Size = new System.Drawing.Size(170, 28);
+            this.resultadosToolStripMenuItem.Text = "Resultados";
+            // 
+            // toolStripComboBox4
+            // 
+            this.toolStripComboBox4.Name = "toolStripComboBox4";
+            this.toolStripComboBox4.Size = new System.Drawing.Size(121, 23);
             // 
             // pediatriaToolStripMenuItem
             // 
@@ -154,49 +199,15 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(90, 27);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // consultaToolStripMenuItem
+            // Conectar
             // 
-            this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox2});
-            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
-            this.consultaToolStripMenuItem.Text = "Consulta";
-            // 
-            // pAPToolStripMenuItem
-            // 
-            this.pAPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox3});
-            this.pAPToolStripMenuItem.Name = "pAPToolStripMenuItem";
-            this.pAPToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
-            this.pAPToolStripMenuItem.Text = "PAP";
-            // 
-            // resultadosToolStripMenuItem
-            // 
-            this.resultadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox4});
-            this.resultadosToolStripMenuItem.Name = "resultadosToolStripMenuItem";
-            this.resultadosToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
-            this.resultadosToolStripMenuItem.Text = "Resultados";
-            // 
-            // toolStripComboBox1
-            // 
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
-            // 
-            // toolStripComboBox2
-            // 
-            this.toolStripComboBox2.Name = "toolStripComboBox2";
-            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 23);
-            // 
-            // toolStripComboBox3
-            // 
-            this.toolStripComboBox3.Name = "toolStripComboBox3";
-            this.toolStripComboBox3.Size = new System.Drawing.Size(121, 23);
-            // 
-            // toolStripComboBox4
-            // 
-            this.toolStripComboBox4.Name = "toolStripComboBox4";
-            this.toolStripComboBox4.Size = new System.Drawing.Size(121, 23);
+            this.Conectar.Location = new System.Drawing.Point(632, 7);
+            this.Conectar.Name = "Conectar";
+            this.Conectar.Size = new System.Drawing.Size(75, 23);
+            this.Conectar.TabIndex = 3;
+            this.Conectar.Text = "Conecctar";
+            this.Conectar.UseVisualStyleBackColor = true;
+            this.Conectar.Click += new System.EventHandler(this.Conectar_Click);
             // 
             // FPrincipal
             // 
@@ -206,6 +217,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Conectar);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
@@ -242,5 +254,6 @@
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox3;
         private System.Windows.Forms.ToolStripMenuItem resultadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox4;
+        private System.Windows.Forms.Button Conectar;
     }
 }

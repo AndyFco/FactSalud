@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConecxionDB.cs" />
     <Compile Include="Fconsulta.cs">
       <SubType>Form</SubType>
     </Compile>

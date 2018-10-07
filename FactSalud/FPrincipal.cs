@@ -43,5 +43,13 @@ namespace FactSalud
             MenuP.WindowState = FormWindowState.Maximized;
             MenuP.Show();
         }
+
+        private void Conectar_Click(object sender, EventArgs e)
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.Abrir();
+       
+
+        }
     }
 }
