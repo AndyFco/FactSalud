@@ -17,7 +17,7 @@ namespace FactSalud
             InitializeComponent();
         }
 
-        private void pediatriaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PediatriaMenu(object sender, EventArgs e)
         {
             //Abrir ventana consulta
             Consulta MenuP = new Consulta();
@@ -26,7 +26,7 @@ namespace FactSalud
             MenuP.Show();
         }
 
-        private void psicologiaToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PsicologiaMenu(object sender, EventArgs e)
         {
             //Abrir ventana consulta
             Consulta MenuP = new Consulta();
@@ -35,7 +35,7 @@ namespace FactSalud
             MenuP.Show();
         }
 
-        private void laboratorioToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LaboratorioMenu(object sender, EventArgs e)
         {
             //Abrir ventana laboratorio
             FLaboratorio MenuP = new FLaboratorio();
@@ -44,12 +44,11 @@ namespace FactSalud
             MenuP.Show();
         }
 
-        private void Conectar_Click(object sender, EventArgs e)
+        private void FPrincipal_Load(object sender, EventArgs e)
         {
             ConecxionDB c = new ConecxionDB();
             c.Abrir();
-       
-
+            c.LlenarBoxGral(MedicoGralBox);
         }
     }
 }
