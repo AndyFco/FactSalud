@@ -31,7 +31,6 @@ namespace FactSalud
         }
         public void LlenarBoxGral(ToolStripComboBox cb)
         {//Selecciona de la base de datos quienes imparten medicina General
-
             try
             {
                 cmd = new SqlCommand("SELECT MedicoNombre From Medico where MedicoEspecialidad ='Med. General' or MedicoEspecialidad ='Gineco Obstetra';", conectar);
@@ -42,11 +41,45 @@ namespace FactSalud
                 }
                 cb.SelectedIndex = 0;
                 dr.Close();
-
+            }catch (Exception ex)
+            {
+                MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
+            }
+        }
+        public void LlenarGinecologia(ToolStripComboBox cb)
+        {//Selecciona de la base de datos quienes imparten Ginecologia
+            try
+            {
+                cmd = new SqlCommand("SELECT MedicoNombre From Medico where  MedicoEspecialidad ='Gineco Obstetra';", conectar);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cb.Items.Add(dr["MedicoNombre"].ToString());
+                }
+                cb.SelectedIndex = 0;
+                dr.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
+            }
+        }
+        public void LlenarLab(ListBox cb)
+        {//Selecciona de la base de datos los analisis registrados
+            try
+            {
+                cmd = new SqlCommand("SELECT AnalisisDescripcion From Analisis;", conectar);//, AnalisisPrecio
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cb.Items.Add(dr["AnalisisDescripcion"]);//+"  AnalisisPrecio"
+                }
+                cb.SelectedIndex = 0;
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se lleno el List: " + ex.ToString());
             }
         }
 

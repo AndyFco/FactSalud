@@ -31,12 +31,19 @@ namespace FactSalud
 
 
             //Eliminas números duplicados y llenas el listbox
-            listBox1.Items.Add(numeros);
+            
         }
 
         private void BtnSalir(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FLaboratorio_Load(object sender, EventArgs e)
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.Abrir();
+            c.LlenarLab(AnalisisList);
         }
     }
 }

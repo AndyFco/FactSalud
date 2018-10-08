@@ -49,6 +49,9 @@ namespace FactSalud
             ConecxionDB c = new ConecxionDB();
             c.Abrir();
             c.LlenarBoxGral(MedicoGralBox);
+            c.LlenarGinecologia(GinecologiaBox);
+            c.LlenarGinecologia(GinecologiaBox2);
+            c.LlenarGinecologia(GinecologiaBox3);
         }
     }
 }

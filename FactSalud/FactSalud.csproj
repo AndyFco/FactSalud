@@ -87,6 +87,9 @@
     <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Fconsulta.resx">
+      <DependentUpon>Fconsulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLaboratorio.resx">
       <DependentUpon>FLaboratorio.cs</DependentUpon>
     </EmbeddedResource>

@@ -32,13 +32,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.servicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicinaGeneralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MedicoGralBox = new System.Windows.Forms.ToolStripComboBox();
             this.ginecologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
+            this.GinecologiaBox = new System.Windows.Forms.ToolStripComboBox();
             this.pAPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox3 = new System.Windows.Forms.ToolStripComboBox();
+            this.GinecologiaBox2 = new System.Windows.Forms.ToolStripComboBox();
             this.resultadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripComboBox4 = new System.Windows.Forms.ToolStripComboBox();
+            this.GinecologiaBox3 = new System.Windows.Forms.ToolStripComboBox();
             this.pediatriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.psicologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.odontologiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +48,6 @@
             this.sonografiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MedicoGralBox = new System.Windows.Forms.ToolStripComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,11 @@
             this.medicinaGeneralToolStripMenuItem.Size = new System.Drawing.Size(244, 28);
             this.medicinaGeneralToolStripMenuItem.Text = "Medicina General";
             // 
+            // MedicoGralBox
+            // 
+            this.MedicoGralBox.Name = "MedicoGralBox";
+            this.MedicoGralBox.Size = new System.Drawing.Size(121, 23);
+            // 
             // ginecologiaToolStripMenuItem
             // 
             this.ginecologiaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -102,41 +107,41 @@
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox2});
+            this.GinecologiaBox});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
             this.consultaToolStripMenuItem.Text = "Consulta";
             // 
-            // toolStripComboBox2
+            // GinecologiaBox
             // 
-            this.toolStripComboBox2.Name = "toolStripComboBox2";
-            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 23);
+            this.GinecologiaBox.Name = "GinecologiaBox";
+            this.GinecologiaBox.Size = new System.Drawing.Size(121, 23);
             // 
             // pAPToolStripMenuItem
             // 
             this.pAPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox3});
+            this.GinecologiaBox2});
             this.pAPToolStripMenuItem.Name = "pAPToolStripMenuItem";
             this.pAPToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
             this.pAPToolStripMenuItem.Text = "PAP";
             // 
-            // toolStripComboBox3
+            // GinecologiaBox2
             // 
-            this.toolStripComboBox3.Name = "toolStripComboBox3";
-            this.toolStripComboBox3.Size = new System.Drawing.Size(121, 23);
+            this.GinecologiaBox2.Name = "GinecologiaBox2";
+            this.GinecologiaBox2.Size = new System.Drawing.Size(121, 23);
             // 
             // resultadosToolStripMenuItem
             // 
             this.resultadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripComboBox4});
+            this.GinecologiaBox3});
             this.resultadosToolStripMenuItem.Name = "resultadosToolStripMenuItem";
             this.resultadosToolStripMenuItem.Size = new System.Drawing.Size(186, 28);
             this.resultadosToolStripMenuItem.Text = "Resultados";
             // 
-            // toolStripComboBox4
+            // GinecologiaBox3
             // 
-            this.toolStripComboBox4.Name = "toolStripComboBox4";
-            this.toolStripComboBox4.Size = new System.Drawing.Size(121, 23);
+            this.GinecologiaBox3.Name = "GinecologiaBox3";
+            this.GinecologiaBox3.Size = new System.Drawing.Size(121, 23);
             // 
             // pediatriaToolStripMenuItem
             // 
@@ -193,11 +198,6 @@
             this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(97, 27);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             // 
-            // MedicoGralBox
-            // 
-            this.MedicoGralBox.Name = "MedicoGralBox";
-            this.MedicoGralBox.Size = new System.Drawing.Size(121, 23);
-            // 
             // FPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,11 +237,11 @@
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
+        private System.Windows.Forms.ToolStripComboBox GinecologiaBox;
         private System.Windows.Forms.ToolStripMenuItem pAPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox3;
+        private System.Windows.Forms.ToolStripComboBox GinecologiaBox2;
         private System.Windows.Forms.ToolStripMenuItem resultadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox4;
+        private System.Windows.Forms.ToolStripComboBox GinecologiaBox3;
         private System.Windows.Forms.ToolStripComboBox MedicoGralBox;
     }
 }
