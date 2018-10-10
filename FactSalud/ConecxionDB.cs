@@ -64,7 +64,7 @@ namespace FactSalud
                 MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
             }
         }
-        public void LlenarLab(ListBox cb)
+        public void LlenarLab(CheckedListBox cb)
         {//Selecciona de la base de datos los analisis registrados
             try
             {

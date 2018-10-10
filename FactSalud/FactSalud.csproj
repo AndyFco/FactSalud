@@ -65,6 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConecxionDB.cs" />
+    <Compile Include="FAnalisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAnalisis.Designer.cs">
+      <DependentUpon>FAnalisis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fconsulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAnalisis.resx">
+      <DependentUpon>FAnalisis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Fconsulta.resx">
       <DependentUpon>Fconsulta.cs</DependentUpon>
     </EmbeddedResource>

@@ -49,6 +49,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.AnalisisList = new System.Windows.Forms.ListBox();
+            this.AnalisisPrecio = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -120,7 +124,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(289, 148);
+            this.label9.Location = new System.Drawing.Point(328, 198);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 19);
             this.label9.TabIndex = 35;
@@ -241,12 +245,52 @@
             // AnalisisList
             // 
             this.AnalisisList.FormattingEnabled = true;
-            this.AnalisisList.Location = new System.Drawing.Point(183, 188);
+            this.AnalisisList.Location = new System.Drawing.Point(275, 220);
             this.AnalisisList.MultiColumn = true;
             this.AnalisisList.Name = "AnalisisList";
             this.AnalisisList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.AnalisisList.Size = new System.Drawing.Size(471, 121);
+            this.AnalisisList.Size = new System.Drawing.Size(185, 121);
             this.AnalisisList.TabIndex = 46;
+            // 
+            // AnalisisPrecio
+            // 
+            this.AnalisisPrecio.FormattingEnabled = true;
+            this.AnalisisPrecio.Location = new System.Drawing.Point(466, 220);
+            this.AnalisisPrecio.MultiColumn = true;
+            this.AnalisisPrecio.Name = "AnalisisPrecio";
+            this.AnalisisPrecio.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.AnalisisPrecio.Size = new System.Drawing.Size(185, 121);
+            this.AnalisisPrecio.TabIndex = 48;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(520, 198);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 19);
+            this.label10.TabIndex = 47;
+            this.label10.Text = "Precio";
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Location = new System.Drawing.Point(123, 220);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.BtnBuscar.TabIndex = 49;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(123, 259);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 50;
+            this.button4.Text = "Borrar";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // FLaboratorio
             // 
@@ -256,6 +300,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BtnBuscar);
+            this.Controls.Add(this.AnalisisPrecio);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.AnalisisList);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -308,5 +356,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox AnalisisList;
+        private System.Windows.Forms.ListBox AnalisisPrecio;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Button button4;
     }
 }

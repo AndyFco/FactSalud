@@ -15,23 +15,6 @@ namespace FactSalud
         public FLaboratorio()
         {
             InitializeComponent();
-            llenar();
-        }
-
-        public List<string> numeros = new List<string>();
-
-        public void llenar()
-        {
-            //Añades los números
-            this.numeros.Add(" fff");
-            this.numeros.Add(" fff");
-            this.numeros.Add(" fff");
-            this.numeros.Add(" fff");
-            this.numeros.Add(" fff");
-
-
-            //Eliminas números duplicados y llenas el listbox
-            
         }
 
         private void BtnSalir(object sender, EventArgs e)
@@ -41,9 +24,13 @@ namespace FactSalud
 
         private void FLaboratorio_Load(object sender, EventArgs e)
         {
-            ConecxionDB c = new ConecxionDB();
-            c.Abrir();
-            c.LlenarLab(AnalisisList);
+         
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            FAnalisis A = new FAnalisis();
+            A.Show();
         }
     }
 }
