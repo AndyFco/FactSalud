@@ -42,7 +42,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblMedico = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -178,15 +178,15 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Servicio";
             // 
-            // label10
+            // lblMedico
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(154, 301);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 19);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Medico";
+            this.lblMedico.AutoSize = true;
+            this.lblMedico.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedico.Location = new System.Drawing.Point(154, 301);
+            this.lblMedico.Name = "lblMedico";
+            this.lblMedico.Size = new System.Drawing.Size(58, 19);
+            this.lblMedico.TabIndex = 15;
+            this.lblMedico.Text = "Medico";
             // 
             // label11
             // 
@@ -273,7 +273,7 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblMedico);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -312,7 +312,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblMedico;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox5;

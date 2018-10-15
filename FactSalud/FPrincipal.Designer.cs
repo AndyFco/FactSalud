@@ -93,6 +93,7 @@
             // 
             this.MedicoGralBox.Name = "MedicoGralBox";
             this.MedicoGralBox.Size = new System.Drawing.Size(121, 23);
+            this.MedicoGralBox.SelectedIndexChanged += new System.EventHandler(this.MedicoGralBox_SelectedIndexChanged);
             // 
             // ginecologiaToolStripMenuItem
             // 

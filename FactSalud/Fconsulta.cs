@@ -22,6 +22,10 @@ namespace FactSalud
 
         }
 
+        public void ObtenerDoctor( string n)
+        {
+            lblMedico.Text = n;
+        }
         private void BtnSalir(object sender, EventArgs e)
         {
             this.Close();

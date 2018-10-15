@@ -53,5 +53,19 @@ namespace FactSalud
             c.LlenarGinecologia(GinecologiaBox2);
             c.LlenarGinecologia(GinecologiaBox3);
         }
+
+        private void MedicoGralBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            int indice = MedicoGralBox.SelectedIndex;
+            string seleccion =MedicoGralBox.Items[indice].ToString();
+            //Abrir ventana consulta
+            Consulta MenuP = new Consulta();
+            MenuP.MdiParent = this;
+            MenuP.WindowState = FormWindowState.Maximized;
+            MenuP.Show();
+            MenuP.ObtenerDoctor(seleccion);
+         
+        }
     }
 }
