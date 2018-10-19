@@ -65,7 +65,6 @@ namespace FactSalud
             MenuP.WindowState = FormWindowState.Maximized;
             MenuP.Show();
             MenuP.ObtenerDoctor(seleccion);
-         
         }
     }
 }

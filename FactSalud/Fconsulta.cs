@@ -21,6 +21,7 @@ namespace FactSalud
         {
 
         }
+        
 
         public void ObtenerDoctor( string n)
         {
@@ -29,6 +30,12 @@ namespace FactSalud
         private void BtnSalir(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.EnviarPaciente(tBoxNombre.Text, tBoxDireccion.Text, tBoxTelefono.Text, int.Parse(tBoxEdad.Text), tBoxCedula.Text);
         }
     }
 }

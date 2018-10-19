@@ -82,6 +82,34 @@ namespace FactSalud
                 MessageBox.Show("No se lleno el List: " + ex.ToString());
             }
         }
+        public void EnviarPaciente(string nombre,string direccion,string telefono, int edad,string cedula)
+        {//Para enviar los datos del paciente
+            try
+            {
+
+            String query = "INSERT INTO Paciente (PacienteNombre,PacienteDireccion,PacienteTelefono,PacienteEdad,PacienteCedula) VALUES (@nombre,@dir,@tel, @edad,@cedula)";
+
+                using (SqlCommand command = new SqlCommand(query, conectar))
+                {
+                    command.Parameters.AddWithValue("@nombre", nombre);
+                    command.Parameters.AddWithValue("@dir", direccion);
+                    command.Parameters.AddWithValue("@tel", telefono);
+                    command.Parameters.AddWithValue("@edad", edad);
+                    command.Parameters.AddWithValue("@cedula", cedula);
+
+                    conectar.Open();
+                    int result = command.ExecuteNonQuery();
+
+                    // Check Error
+                    if (result < 0)
+                        Console.WriteLine("Error inserting data into Database!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se enviaron los datos " + ex.ToString());
+            }
+        }
 
     }
 }
