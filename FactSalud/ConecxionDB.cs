@@ -29,7 +29,7 @@ namespace FactSalud
             catch(Exception ex)
             { Console.WriteLine("Error" + ex.Message); }
         }
-        public void LlenarBoxGral(ToolStripComboBox cb)
+        public void LlenarBoxGral(ComboBox cb)
         {//Selecciona de la base de datos quienes imparten medicina General
             try
             {
@@ -46,11 +46,47 @@ namespace FactSalud
                 MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
             }
         }
-        public void LlenarGinecologia(ToolStripComboBox cb)
+        public void LlenarGinecologia(ComboBox cb)
         {//Selecciona de la base de datos quienes imparten Ginecologia
             try
             {
                 cmd = new SqlCommand("SELECT MedicoNombre From Medico where  MedicoEspecialidad ='Gineco Obstetra';", conectar);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cb.Items.Add(dr["MedicoNombre"].ToString());
+                }
+                cb.SelectedIndex = 0;
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
+            }
+        }
+        public void LlenarPediatria(ComboBox cb)
+        {//Selecciona de la base de datos quienes imparten Pediatria
+            try
+            {
+                cmd = new SqlCommand("SELECT MedicoNombre From Medico where  MedicoEspecialidad ='Pediatria';", conectar);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cb.Items.Add(dr["MedicoNombre"].ToString());
+                }
+                cb.SelectedIndex = 0;
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
+            }
+        }
+        public void LlenarPsicologia(ComboBox cb)
+        {//Selecciona de la base de datos quienes imparten Psicologia
+            try
+            {
+                cmd = new SqlCommand("SELECT MedicoNombre From Medico where  MedicoEspecialidad ='Psicologo';", conectar);
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {

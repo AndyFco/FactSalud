@@ -23,10 +23,47 @@ namespace FactSalud
         }
         
 
-        public void ObtenerDoctor( string n)
+        public void ConsGeneral()
         {
-            lblMedico.Text = n;
+
+            ConecxionDB c = new ConecxionDB();
+            c.Abrir();
+            c.LlenarBoxGral(comboBoxMedico);
+            comboConsulta.Items.Add("Consulta General");
+            comboConsulta.Items.Add("Resultados");
+
         }
+        public void ConsGinecologia()
+        {
+
+            ConecxionDB c = new ConecxionDB();
+            c.Abrir();
+            c.LlenarGinecologia(comboBoxMedico);
+            comboConsulta.Items.Add("Consulta Ginecologica");
+            comboConsulta.Items.Add("PAP");
+            comboConsulta.Items.Add("Resultados");
+
+        }
+        public void ConsPediatria()
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.Abrir();
+            c.LlenarPediatria(comboBoxMedico);
+            comboConsulta.Items.Add("Consulta pediatria");
+            comboConsulta.Items.Add("Resultados");
+
+        }
+        public void ConsPsicologia()
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.Abrir();
+            c.LlenarPsicologia(comboBoxMedico);
+            comboConsulta.Items.Add("Consulta psicologia");
+            comboConsulta.Items.Add("Resultados");
+
+        }
+
+
         private void BtnSalir(object sender, EventArgs e)
         {
             this.Close();
@@ -36,6 +73,12 @@ namespace FactSalud
         {
             ConecxionDB c = new ConecxionDB();
             c.EnviarPaciente(tBoxNombre.Text, tBoxDireccion.Text, tBoxTelefono.Text, int.Parse(tBoxEdad.Text), tBoxCedula.Text);
+            this.Close();
+        }
+
+        private void Consulta_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

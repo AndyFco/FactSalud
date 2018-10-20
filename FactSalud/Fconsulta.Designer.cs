@@ -42,15 +42,15 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.lblMedico = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.tBoxCedula = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBoxMedico = new System.Windows.Forms.ComboBox();
+            this.comboConsulta = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -172,21 +172,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(83, 160);
+            this.label9.Location = new System.Drawing.Point(114, 182);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 19);
             this.label9.TabIndex = 12;
             this.label9.Text = "Servicio";
-            // 
-            // lblMedico
-            // 
-            this.lblMedico.AutoSize = true;
-            this.lblMedico.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedico.Location = new System.Drawing.Point(154, 301);
-            this.lblMedico.Name = "lblMedico";
-            this.lblMedico.Size = new System.Drawing.Size(58, 19);
-            this.lblMedico.TabIndex = 15;
-            this.lblMedico.Text = "Medico";
             // 
             // label11
             // 
@@ -197,14 +187,6 @@
             this.label11.Size = new System.Drawing.Size(58, 19);
             this.label11.TabIndex = 14;
             this.label11.Text = "Medico";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(158, 160);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(351, 118);
-            this.richTextBox1.TabIndex = 16;
-            this.richTextBox1.Text = "";
             // 
             // textBox5
             // 
@@ -227,7 +209,7 @@
             // 
             this.tBoxCedula.Location = new System.Drawing.Point(87, 116);
             this.tBoxCedula.Name = "tBoxCedula";
-            this.tBoxCedula.Size = new System.Drawing.Size(59, 20);
+            this.tBoxCedula.Size = new System.Drawing.Size(204, 20);
             this.tBoxCedula.TabIndex = 20;
             // 
             // label13
@@ -260,6 +242,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.BtnSalir);
             // 
+            // comboBoxMedico
+            // 
+            this.comboBoxMedico.FormattingEnabled = true;
+            this.comboBoxMedico.Location = new System.Drawing.Point(168, 299);
+            this.comboBoxMedico.Name = "comboBoxMedico";
+            this.comboBoxMedico.Size = new System.Drawing.Size(215, 21);
+            this.comboBoxMedico.TabIndex = 23;
+            // 
+            // comboConsulta
+            // 
+            this.comboConsulta.FormattingEnabled = true;
+            this.comboConsulta.Location = new System.Drawing.Point(219, 182);
+            this.comboConsulta.Name = "comboConsulta";
+            this.comboConsulta.Size = new System.Drawing.Size(256, 21);
+            this.comboConsulta.TabIndex = 24;
+            // 
             // Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,14 +265,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(708, 408);
             this.ControlBox = false;
+            this.Controls.Add(this.comboConsulta);
+            this.Controls.Add(this.comboBoxMedico);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.tBoxCedula);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.lblMedico);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -292,6 +290,7 @@
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "Consulta";
+            this.Load += new System.EventHandler(this.Consulta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,14 +312,14 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lblMedico;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox tBoxCedula;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBoxMedico;
+        private System.Windows.Forms.ComboBox comboConsulta;
     }
 }

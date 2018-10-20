@@ -24,6 +24,8 @@ namespace FactSalud
             MenuP.MdiParent = this;
             MenuP.WindowState = FormWindowState.Maximized;
             MenuP.Show();
+            MenuP.ConsPediatria();
+
         }
 
         private void PsicologiaMenu(object sender, EventArgs e)
@@ -33,6 +35,7 @@ namespace FactSalud
             MenuP.MdiParent = this;
             MenuP.WindowState = FormWindowState.Maximized;
             MenuP.Show();
+            MenuP.ConsPsicologia();
         }
 
         private void LaboratorioMenu(object sender, EventArgs e)
@@ -46,25 +49,27 @@ namespace FactSalud
 
         private void FPrincipal_Load(object sender, EventArgs e)
         {
-            ConecxionDB c = new ConecxionDB();
-            c.Abrir();
-            c.LlenarBoxGral(MedicoGralBox);
-            c.LlenarGinecologia(GinecologiaBox);
-            c.LlenarGinecologia(GinecologiaBox2);
-            c.LlenarGinecologia(GinecologiaBox3);
+            
         }
 
-        private void MedicoGralBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void medicinaGeneralToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            int indice = MedicoGralBox.SelectedIndex;
-            string seleccion =MedicoGralBox.Items[indice].ToString();
             //Abrir ventana consulta
+           
             Consulta MenuP = new Consulta();
             MenuP.MdiParent = this;
             MenuP.WindowState = FormWindowState.Maximized;
             MenuP.Show();
-            MenuP.ObtenerDoctor(seleccion);
+            MenuP.ConsGeneral();
+        }
+
+        private void ginecologiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Consulta MenuP = new Consulta();
+            MenuP.MdiParent = this;
+            MenuP.WindowState = FormWindowState.Maximized;
+            MenuP.Show();
+            MenuP.ConsGinecologia();
         }
     }
 }
