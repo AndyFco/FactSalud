@@ -89,6 +89,12 @@
     <Compile Include="FPrincipal.Designer.cs">
       <DependentUpon>FPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSonografia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSonografia.Designer.cs">
+      <DependentUpon>FSonografia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Program.cs" />
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FPrincipal.resx">
       <DependentUpon>FPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSonografia.resx">
+      <DependentUpon>FSonografia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

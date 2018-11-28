@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.BtnEnviar = new System.Windows.Forms.Button();
+            this.tBoxCedula = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -38,10 +38,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tBoxTelefono = new System.Windows.Forms.TextBox();
+            this.tBoxEdad = new System.Windows.Forms.TextBox();
+            this.tBoxDireccion = new System.Windows.Forms.TextBox();
+            this.tBoxNombre = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -65,21 +65,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.BtnSalir);
             // 
-            // button1
+            // BtnEnviar
             // 
-            this.button1.Location = new System.Drawing.Point(250, 364);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Enviar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnEnviar.Location = new System.Drawing.Point(250, 364);
+            this.BtnEnviar.Name = "BtnEnviar";
+            this.BtnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEnviar.TabIndex = 44;
+            this.BtnEnviar.Text = "Enviar";
+            this.BtnEnviar.UseVisualStyleBackColor = true;
+            this.BtnEnviar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox6
+            // tBoxCedula
             // 
-            this.textBox6.Location = new System.Drawing.Point(139, 144);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 20);
-            this.textBox6.TabIndex = 43;
+            this.tBoxCedula.Location = new System.Drawing.Point(139, 144);
+            this.tBoxCedula.Name = "tBoxCedula";
+            this.tBoxCedula.Size = new System.Drawing.Size(148, 20);
+            this.tBoxCedula.TabIndex = 43;
             // 
             // label13
             // 
@@ -152,33 +153,33 @@
             this.label6.TabIndex = 33;
             this.label6.Text = "Usuario";
             // 
-            // textBox4
+            // tBoxTelefono
             // 
-            this.textBox4.Location = new System.Drawing.Point(626, 115);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(112, 20);
-            this.textBox4.TabIndex = 32;
+            this.tBoxTelefono.Location = new System.Drawing.Point(626, 115);
+            this.tBoxTelefono.Name = "tBoxTelefono";
+            this.tBoxTelefono.Size = new System.Drawing.Size(112, 20);
+            this.tBoxTelefono.TabIndex = 32;
             // 
-            // textBox3
+            // tBoxEdad
             // 
-            this.textBox3.Location = new System.Drawing.Point(484, 115);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(59, 20);
-            this.textBox3.TabIndex = 31;
+            this.tBoxEdad.Location = new System.Drawing.Point(484, 115);
+            this.tBoxEdad.Name = "tBoxEdad";
+            this.tBoxEdad.Size = new System.Drawing.Size(59, 20);
+            this.tBoxEdad.TabIndex = 31;
             // 
-            // textBox2
+            // tBoxDireccion
             // 
-            this.textBox2.Location = new System.Drawing.Point(139, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(287, 20);
-            this.textBox2.TabIndex = 30;
+            this.tBoxDireccion.Location = new System.Drawing.Point(139, 110);
+            this.tBoxDireccion.Name = "tBoxDireccion";
+            this.tBoxDireccion.Size = new System.Drawing.Size(287, 20);
+            this.tBoxDireccion.TabIndex = 30;
             // 
-            // textBox1
+            // tBoxNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(287, 20);
-            this.textBox1.TabIndex = 29;
+            this.tBoxNombre.Location = new System.Drawing.Point(139, 83);
+            this.tBoxNombre.Name = "tBoxNombre";
+            this.tBoxNombre.Size = new System.Drawing.Size(287, 20);
+            this.tBoxNombre.TabIndex = 29;
             // 
             // dateTimePicker1
             // 
@@ -251,6 +252,7 @@
             this.AnalisisList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.AnalisisList.Size = new System.Drawing.Size(185, 121);
             this.AnalisisList.TabIndex = 46;
+            this.AnalisisList.SelectedIndexChanged += new System.EventHandler(this.AnalisisList_SelectedIndexChanged);
             // 
             // AnalisisPrecio
             // 
@@ -306,8 +308,8 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.AnalisisList);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.BtnEnviar);
+            this.Controls.Add(this.tBoxCedula);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label12);
@@ -315,10 +317,10 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tBoxTelefono);
+            this.Controls.Add(this.tBoxEdad);
+            this.Controls.Add(this.tBoxDireccion);
+            this.Controls.Add(this.tBoxNombre);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -336,8 +338,8 @@
         #endregion
 
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button BtnEnviar;
+        private System.Windows.Forms.TextBox tBoxCedula;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label12;
@@ -345,10 +347,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tBoxTelefono;
+        private System.Windows.Forms.TextBox tBoxEdad;
+        private System.Windows.Forms.TextBox tBoxDireccion;
+        private System.Windows.Forms.TextBox tBoxNombre;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

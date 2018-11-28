@@ -27,12 +27,25 @@ namespace FactSalud
         public void Enviar()
         {
 
-            AnalisisLiBox.Items.Add(Analisis, CheckState.Checked);
-           
+
+            Analisis.Add(AnalisisLiBox.SelectedItem.ToString());
+            //Abrir ventana laboratorio
+            FLaboratorio MenuP = new FLaboratorio();
+            MenuP.MdiParent = this;
+            MenuP.WindowState = FormWindowState.Maximized;
+            MenuP.ObtenerAnalisis(Analisis); 
+            MenuP.Show();
 
         }
 
         private void BtnEnviar_Click(object sender, EventArgs e)
+        {
+            Enviar();
+            this.Close();
+            
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }

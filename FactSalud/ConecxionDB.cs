@@ -104,7 +104,7 @@ namespace FactSalud
         {//Selecciona de la base de datos los analisis registrados
             try
             {
-                cmd = new SqlCommand("SELECT AnalisisDescripcion From Analisis;", conectar);//, AnalisisPrecio
+                cmd = new SqlCommand("SELECT AnalisisDescripcion From Analisis;", conectar);//, AnalisisList
                 dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
@@ -118,6 +118,7 @@ namespace FactSalud
                 MessageBox.Show("No se lleno el List: " + ex.ToString());
             }
         }
+        
         public void EnviarPaciente(string nombre,string direccion,string telefono, int edad,string cedula)
         {//Para enviar los datos del paciente
             try

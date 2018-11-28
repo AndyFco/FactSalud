@@ -51,6 +51,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.comboBoxMedico = new System.Windows.Forms.ComboBox();
             this.comboConsulta = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -258,6 +260,26 @@
             this.comboConsulta.Size = new System.Drawing.Size(256, 21);
             this.comboConsulta.TabIndex = 24;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(320, 232);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 19);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "precio";
+            // 
+            // lblPrecio
+            // 
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(382, 232);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(52, 19);
+            this.lblPrecio.TabIndex = 26;
+            this.lblPrecio.Text = "precio";
+            // 
             // Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,6 +287,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(708, 408);
             this.ControlBox = false;
+            this.Controls.Add(this.lblPrecio);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.comboConsulta);
             this.Controls.Add(this.comboBoxMedico);
             this.Controls.Add(this.button2);
@@ -321,5 +345,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBoxMedico;
         private System.Windows.Forms.ComboBox comboConsulta;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblPrecio;
     }
 }
