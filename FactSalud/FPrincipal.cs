@@ -71,5 +71,13 @@ namespace FactSalud
             MenuP.Show();
             MenuP.ConsGinecologia();
         }
+
+        private void sonografiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FSonografia MenuP = new FSonografia();
+            MenuP.MdiParent = this;
+            MenuP.WindowState = FormWindowState.Maximized;
+            MenuP.Show();
+        }
     }
 }

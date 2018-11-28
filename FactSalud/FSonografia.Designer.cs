@@ -182,6 +182,7 @@
             this.button2.TabIndex = 59;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // BtnEnviar
             // 
@@ -191,6 +192,7 @@
             this.BtnEnviar.TabIndex = 58;
             this.BtnEnviar.Text = "Enviar";
             this.BtnEnviar.UseVisualStyleBackColor = true;
+            this.BtnEnviar.Click += new System.EventHandler(this.BtnEnviar_Click);
             // 
             // listBox1
             // 

@@ -128,6 +128,7 @@
             this.sonografiaToolStripMenuItem.Name = "sonografiaToolStripMenuItem";
             this.sonografiaToolStripMenuItem.Size = new System.Drawing.Size(141, 27);
             this.sonografiaToolStripMenuItem.Text = "Sonografia";
+            this.sonografiaToolStripMenuItem.Click += new System.EventHandler(this.sonografiaToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
